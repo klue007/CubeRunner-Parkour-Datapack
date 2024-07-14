@@ -1,0 +1,2 @@
+execute if entity @a[distance=..10] facing entity @a[limit=1,sort=nearest] eyes positioned ^ ^ ^-5 run function common:ingame/firework/single/position/dodge_player
+execute unless entity @a[distance=..10] run function common:ingame/firework/single/summon

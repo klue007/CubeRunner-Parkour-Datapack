@@ -1,0 +1,10 @@
+advancement revoke @s only common:click/back_to_cp
+advancement revoke @s only common:click/training_mode/flight
+advancement revoke @s only common:click/training_mode/savestate_set
+advancement revoke @s only common:click/training_mode/savestate_tp
+advancement revoke @s only common:click/training_mode/timer
+advancement revoke @s only common:click/training_mode/toggle
+advancement revoke @s only common:click/race/show_rank
+advancement revoke @s only common:click/race/start
+advancement revoke @s only common:click/race/stop
+advancement revoke @s only common:click/race/create

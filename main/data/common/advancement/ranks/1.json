@@ -1,0 +1,27 @@
+{
+    "parent": "common:ranks/root",
+    "display": {
+        "title": {
+            "text": "1-✮",
+            "color": "light_purple",
+            "bold": true
+        },
+        "description": {
+            "text": "时间限制: 无",
+            "color": "white",
+            "bold": false
+        },
+        "icon": {
+            "id": "minecraft:copper_ingot"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": true
+    },
+    "criteria": {
+        "main": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

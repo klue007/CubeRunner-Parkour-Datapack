@@ -1,0 +1,27 @@
+{
+    "parent": "common:ranks/3",
+    "display": {
+        "title": {
+            "text": "4-✮",
+            "color": "red",
+            "bold": true
+        },
+        "description": {
+            "text": "时间限制:\n≤ 1:00:00",
+            "color": "white",
+            "bold": false
+        },
+        "icon": {
+            "id": "minecraft:diamond"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": true
+    },
+    "criteria": {
+        "main": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

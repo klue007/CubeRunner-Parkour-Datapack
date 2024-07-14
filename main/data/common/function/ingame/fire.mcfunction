@@ -1,0 +1,1 @@
+execute as @a run attribute @s generic.burning_time base set 0

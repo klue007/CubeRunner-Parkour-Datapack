@@ -1,0 +1,5 @@
+execute as @s[gamemode=adventure] unless entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":{"back_cp":true}},id:"minecraft:light_weighted_pressure_plate"}]}] run item replace entity @s hotbar.8 with minecraft:light_weighted_pressure_plate[item_name='[{"text":"返回重生点","color":"red","bold":true,"italic":false}]',custom_data={"back_cp":true},lore=['[{"text": "右键","color": "gold","italic": false},{"text": " 以返回上一个重生点","color": "gray","italic": false}]'],food={nutrition:0,saturation:0,can_always_eat:true,eat_seconds:2147483647}]
+
+execute as @s[gamemode=!adventure] unless entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":{"back_cp":true}},id:"minecraft:gold_nugget"}]}] run item replace entity @s hotbar.8 with minecraft:gold_nugget[item_name='[{"text":"返回重生点","color":"red","bold":true,"italic":false}]',custom_data={"back_cp":true},lore=['[{"text": "右键","color": "gold","italic": false},{"text": " 以返回上一个重生点","color": "gray","italic": false}]'],food={nutrition:0,saturation:0,can_always_eat:true,eat_seconds:2147483647}]
+
+execute as @a[advancements={common:click/back_to_cp=true}] run scoreboard players operation @s click_delay = #click_delay const

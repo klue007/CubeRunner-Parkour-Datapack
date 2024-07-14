@@ -1,0 +1,16 @@
+{
+    "criteria": {
+      "use_item": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "predicates": {
+              "minecraft:custom_data": { "race_info":true }
+            }
+          }
+        }
+      }
+    },
+    "rewards": { "function": "common:race/show_rank_pre" }
+  }
+  

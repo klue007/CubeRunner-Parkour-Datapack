@@ -1,0 +1,23 @@
+{
+  "parent": "common:ranks/4",
+  "display": {
+    "title": { "text": "5-✮", "color": "yellow", "bold": true },
+    "description": {
+      "text": "时间限制:\n≤ 40:00",
+      "color": "white",
+      "bold": false
+    },
+    "icon": {
+      "id": "minecraft:nether_star"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "main": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

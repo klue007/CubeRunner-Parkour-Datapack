@@ -1,0 +1,27 @@
+{
+    "parent": "common:ranks/1",
+    "display": {
+        "title": {
+            "text": "2-✮",
+            "color": "blue",
+            "bold": true
+        },
+        "description": {
+            "text": "时间限制:\n≤ 4:00:00",
+            "color": "white",
+            "bold": false
+        },
+        "icon": {
+            "id": "minecraft:iron_ingot"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": true
+    },
+    "criteria": {
+        "main": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}
