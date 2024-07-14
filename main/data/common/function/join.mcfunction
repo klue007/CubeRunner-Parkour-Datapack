@@ -1,5 +1,5 @@
 ## Position when join
-tp @s 4 67 73
+tp @s ~ ~ ~
 spawnpoint @s ~ ~ ~ ~
 gamemode adventure @s
 execute unless score @s pb matches 1.. run scoreboard players set @s pb 2147483647
