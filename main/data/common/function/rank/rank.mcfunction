@@ -1,11 +1,15 @@
 execute as @s[scores={rank_timer=5..5}] run advancement revoke @s from common:ranks/root
 execute as @s[scores={rank_timer=5..5}] run title @s times 0 100 30
 execute as @s[scores={rank_timer=5..5}] run title @s clear
-execute as @s[scores={rank_timer=5..19}] run title @s title [{"text": ""}]
-execute as @s[scores={rank_timer=5..19}] run title @s subtitle [{"text": "评"}]
+execute as @s[scores={rank_timer=5..26}] run title @s title [{"text": ""}]
+execute as @s[scores={rank_timer=5..10}] run title @s subtitle [{"text": "R"}]
 execute as @s[scores={rank_timer=5..5}] at @s run playsound minecraft:block.note_block.hat master @s ~ ~ ~ 100000 0.5
-execute as @s[scores={rank_timer=20..39}] run title @s subtitle [{"text": "评级"}]
-execute as @s[scores={rank_timer=20..20}] at @s run playsound minecraft:block.note_block.hat master @s ~ ~ ~ 100000 0.5
+execute as @s[scores={rank_timer=11..16}] run title @s subtitle [{"text": "Ra"}]
+execute as @s[scores={rank_timer=11..11}] at @s run playsound minecraft:block.note_block.hat master @s ~ ~ ~ 100000 0.5
+execute as @s[scores={rank_timer=17..22}] run title @s subtitle [{"text": "Ran"}]
+execute as @s[scores={rank_timer=17..17}] at @s run playsound minecraft:block.note_block.hat master @s ~ ~ ~ 100000 0.5
+execute as @s[scores={rank_timer=23..28}] run title @s subtitle [{"text": "Rank"}]
+execute as @s[scores={rank_timer=23..23}] at @s run playsound minecraft:block.note_block.hat master @s ~ ~ ~ 100000 0.5
 
 execute as @s[scores={rank_timer=40..54}] run title @s title [{"text": "✮"}]
 execute as @s[scores={rank_timer=40..40}] run advancement grant @s until common:ranks/1

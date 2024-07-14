@@ -27,9 +27,9 @@ scoreboard objectives add const dummy "const"
 function common:const
 
 #trigger
-scoreboard objectives add restart trigger [{"text": "重新开始","color": "yellow","bold": true}]
-scoreboard objectives add lobby trigger [{"text": "返回大厅","color": "yellow","bold": true}]
-scoreboard objectives add ranks trigger [{"text": "评级","color": "gold","bold": true}]
+scoreboard objectives add restart trigger [{"text": "Restart","color": "yellow","bold": true}]
+scoreboard objectives add lobby trigger [{"text": "Lobby","color": "yellow","bold": true}]
+scoreboard objectives add ranks trigger [{"text": "Ranks","color": "gold","bold": true}]
 
 #team
 team add ingame "ingame"

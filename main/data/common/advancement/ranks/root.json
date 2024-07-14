@@ -1,12 +1,12 @@
 {
     "display": {
         "title": {
-            "text": "评级",
+            "text": "Rank",
             "color": "yellow",
             "bold": true
         },
         "description": {
-            "text": "挑战以更快的时间通关, 获得更高的评级!",
+            "text": "Try to reach the end faster and get a higher rank!",
             "color": "white",
             "bold": false
         },

@@ -1,7 +1,7 @@
 title @s clear
 title @s times 0 20 15
 title @s title [""]
-title @s subtitle [{"text": "已启用练习模式","bold": true,"color": "green"}]
+title @s subtitle [{"text": "Enabled training mode","bold": true,"color": "green"}]
 function common:timer/timer/reset
 tag @s add timer_display
 tag @s remove timer_enable

@@ -3,7 +3,7 @@
   "display": {
     "title": { "text": "5-✮", "color": "yellow", "bold": true },
     "description": {
-      "text": "时间限制:\n≤ 40:00",
+      "text": "Time:\n≤ 40:00",
       "color": "white",
       "bold": false
     },

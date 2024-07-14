@@ -24,8 +24,8 @@ execute if score @s race_timer matches 2.. as @a[team=race] if score @s raceID =
 #show title
 execute if score @s race_timer matches 400 as @a[team=race] if score @s raceID = @p raceID run title @s clear
 execute if score @s race_timer matches 400 as @a[team=race] if score @s raceID = @p raceID run title @s times 0 60 10
-execute if score @s race_timer matches 400 as @a[team=race] if score @s raceID = @p raceID run title @s title [{"text": "比赛即将开始","bold": true,"color": "green"}]
-execute if score @s race_timer matches 400 as @a[team=race] if score @s raceID = @p raceID run title @s subtitle [{"text": "请做好准备","bold": true,"color": "green"}]
+execute if score @s race_timer matches 400 as @a[team=race] if score @s raceID = @p raceID run title @s title [{"text": "Race starting...","bold": true,"color": "green"}]
+execute if score @s race_timer matches 400 as @a[team=race] if score @s raceID = @p raceID run title @s subtitle [{"text": "","bold": true,"color": "green"}]
 
 #countdown
 execute if score @s race_timer matches 302 as @a[team=race] if score @s raceID = @p raceID run title @s times 0 70 20
@@ -75,7 +75,7 @@ execute if score @s race_timer matches 42 as @a[team=race] if score @s raceID = 
 execute if score @s race_timer matches 22 as @a[team=race] if score @s raceID = @p raceID run title @s title [{"text": "1","color": "red","bold": true}]
 execute if score @s race_timer matches 22 as @a[team=race] if score @s raceID = @p raceID at @s run playsound block.note_block.harp master @s ~ ~ ~ 1 1
 
-execute if score @s race_timer matches 2 as @a[team=race] if score @s raceID = @p raceID run title @s title [{"text": "比赛开始!","color": "red","bold": true}]
+execute if score @s race_timer matches 2 as @a[team=race] if score @s raceID = @p raceID run title @s title [{"text": "Go!","color": "red","bold": true}]
 execute if score @s race_timer matches 2 as @a[team=race] if score @s raceID = @p raceID at @s run playsound block.note_block.harp master @s ~ ~ ~ 1 2
 
 
@@ -92,7 +92,7 @@ execute if score @s race_timer matches 2 run scoreboard players set @s race_rank
 tag @s remove race_processing
 execute if score @s race_timer matches 1 as @a[team=race] if score @s raceID = @p raceID unless entity @s[tag=race_finish] as @a[team=race,tag=race_owner] if score @s raceID = @p raceID run tag @s add race_processing
 #if all done
-execute if score @s race_timer matches 1 unless entity @s[tag=race_processing] as @a[team=race] if score @s raceID = @p raceID run tellraw @s [{"text": "[","color": "white"},{"text": "竞赛","color": "green"},{"text": "] ","color": "white"},{"text": "所有人已完成比赛.","color": "gray"}]
+execute if score @s race_timer matches 1 unless entity @s[tag=race_processing] as @a[team=race] if score @s raceID = @p raceID run tellraw @s [{"text": "[","color": "white"},{"text": "Race","color": "green"},{"text": "] ","color": "white"},{"text": "Everyone has finished the race.","color": "gray"}]
 execute if score @s race_timer matches 1 unless entity @s[tag=race_processing] as @a[team=race] if score @s raceID = @p raceID run scoreboard players set @s race_rank_txt 1
 execute if score @s race_timer matches 1 unless entity @s[tag=race_processing] run tag @s add race_end
 execute if score @s race_timer matches 1 unless entity @s[tag=race_processing] run tag @s remove race_on

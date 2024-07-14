@@ -1,10 +1,10 @@
 scoreboard players operation @s click_delay = #click_delay const
 
 #joined
-execute if entity @s[team=race,tag=!race_owner] run tellraw @s [{"text": "[","color": "white"},{"text": "竞赛","color": "green"},{"text": "] ","color": "white"},{"text": "你已经加入了一个竞赛(ID:","color": "gray"},{"score": {"objective":"raceID","name":"@s"},"color": "gold"},{"text": ").","color": "gray"}]
+execute if entity @s[team=race,tag=!race_owner] run tellraw @s [{"text": "[","color": "white"},{"text": "Race","color": "green"},{"text": "] ","color": "white"},{"text": "You've already joined a race. (ID:","color": "gray"},{"score": {"objective":"raceID","name":"@s"},"color": "gold"},{"text": ").","color": "gray"}]
 
 #exised
-execute if entity @s[tag=race_owner] run tellraw @s [{"text": "[","color": "white"},{"text": "竞赛","color": "green"},{"text": "] ","color": "white"},{"text": "你已经创建了一个竞赛. (ID:","color": "gray"},{"score": {"objective":"raceID","name":"@s"},"color": "gold"},{"text": ")","color": "gray"}]
+execute if entity @s[tag=race_owner] run tellraw @s [{"text": "[","color": "white"},{"text": "Race","color": "green"},{"text": "] ","color": "white"},{"text": "You've created a new race. (ID:","color": "gray"},{"score": {"objective":"raceID","name":"@s"},"color": "gold"},{"text": ")","color": "gray"}]
 
 
 #normal
