@@ -14,8 +14,7 @@ execute if entity @s[tag=!race_owner,team=!race] run scoreboard players operatio
 
 #set race stage to preparing
 execute if entity @s[tag=!race_owner,team=!race] run tag @s add race_prep
-execute if entity @s[tag=!race_owner,team=!race] run tellraw @a [{"text": "[","color": "white"},{"text": "竞赛","color": "green"},{"text": "] ","color": "white"},{"selector":"@s","color":"green"},{"text": "创建了一个新的竞赛. (ID:","color": "gray"},{"score": {"objective":"raceID","name":"@s"},"color": "gold"},{"text": ")","color": "gray"}]
-execute if entity @s[tag=!race_owner,team=!race] run tellraw @a [{"text": "       输入/trigger join_race set ","color": "gray"},{"score": {"objective":"raceID","name":"@s"},"color": "gray"},{"text": "以加入.","color": "gray"}]
+execute if entity @s[tag=!race_owner,team=!race] run function common:race/invite/macro_pre
 
 #set tag
 execute if entity @s[tag=!race_owner,team=!race] run tag @s add jointeam

@@ -16,6 +16,8 @@ tag @s remove race_prep
 tag @s remove race_end
 tag @s remove race_on
 tag @s remove race_processing
+tag @s remove race_inv
+tag @s remove race_inv_given
 scoreboard players set @s race_timer 0
 scoreboard players set @s race_rank_glb 1
 clear @s

@@ -10,4 +10,4 @@ scoreboard players set #rank_3 const 144000
 scoreboard players set #rank_2 const 288000
 
 scoreboard players set #click_delay const 5
-scoreboard players set #firework_delay const 7
+scoreboard players set #firework_delay const 8
