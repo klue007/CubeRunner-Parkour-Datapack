@@ -11,6 +11,6 @@
         }
       }
     },
-    "rewards": { "function": "common:ingame/kill" }
+    "rewards": { "function": "common:ingame/back_to_checkpoint" }
   }
   

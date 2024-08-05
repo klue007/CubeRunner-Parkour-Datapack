@@ -6,9 +6,9 @@ execute unless score @s race_timer matches 1.. as @a[team=race] if score @s race
 execute unless score @s race_timer matches 1.. as @a[team=race] if score @s raceID = @p raceID run tag @s remove race_finish
 execute unless score @s race_timer matches 1.. as @a[team=race] if score @s raceID = @p raceID run effect give @s invisibility 30 1 true
 execute unless score @s race_timer matches 1.. as @a[team=race] if score @s raceID = @p raceID run function common:timer/timer/reset
-execute unless score @s race_timer matches 1.. run scoreboard players set @s race_timer 402
 ## Race Position
 execute unless score @s race_timer matches 1.. as @a[team=race] if score @s raceID = @p raceID run tp @s ~ ~ ~
+execute unless score @s race_timer matches 1.. run scoreboard players set @s race_timer 402
 
 
 #timer
