@@ -46,4 +46,16 @@ execute if score @s ranks matches 1.. run function common:rank/show_ranks
 execute unless score @s ranks matches 0 run scoreboard players set @s ranks 0
 
 
+scoreboard players enable @s tools
+execute if score @s tools matches 1.. if entity @s[tag=tools] run tellraw @s [{"text": "Hotbar tools have been hidden.","color": "gray"}]
+execute if score @s tools matches 1.. if entity @s[tag=tools] run clear @s *[custom_data={tm_toggle:true}]
+execute if score @s tools matches 1.. if entity @s[tag=tools] run clear @s *[custom_data={race_create:true}]
+execute if score @s tools matches 1.. if entity @s[tag=tools] run tag @s add tools_hide
+execute if score @s tools matches 1.. if entity @s[tag=tools] run tag @s remove tools
+execute if score @s tools matches 1.. if entity @s[tag=!tools,tag=!tools_hide] run tellraw @s [{"text": "Hotbar tools have been displayed.","color": "gray"}]
+execute if score @s tools matches 1.. if entity @s[tag=!tools,tag=!tools_hide] run tag @s add tools
+execute if score @s tools matches 1.. as @s[tag=tools_hide] run tag @s remove tools_hide
+execute unless score @s tools matches 0 run scoreboard players set @s tools 0
+
+
 function common:race/trigger

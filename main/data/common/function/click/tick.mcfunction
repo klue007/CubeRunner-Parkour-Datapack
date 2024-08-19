@@ -6,4 +6,4 @@ execute as @a[team=ingame] run function common:click/back_to_checkpoint
 execute as @a[team=end] run function common:click/back_to_checkpoint
 execute as @a[team=race] run function common:click/back_to_checkpoint
 
-execute as @a[team=!race,team=!training_mode] run function common:click/new_race
+execute as @a[team=!race,team=!training_mode,tag=tools] run function common:click/new_race

@@ -30,6 +30,7 @@ function common:const
 scoreboard objectives add restart trigger [{"text": "Restart","color": "yellow","bold": true}]
 scoreboard objectives add lobby trigger [{"text": "Lobby","color": "yellow","bold": true}]
 scoreboard objectives add ranks trigger [{"text": "Ranks","color": "gold","bold": true}]
+scoreboard objectives add tools trigger [{"text": "Tools","color": "yellow","bold": true}]
 
 #team
 team add ingame "ingame"
