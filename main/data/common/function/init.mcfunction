@@ -30,6 +30,7 @@ function common:const
 scoreboard objectives add restart trigger [{"text": "重新开始","color": "yellow","bold": true}]
 scoreboard objectives add lobby trigger [{"text": "返回大厅","color": "yellow","bold": true}]
 scoreboard objectives add ranks trigger [{"text": "评级","color": "gold","bold": true}]
+scoreboard objectives add tools trigger [{"text": "快捷工具","color": "yellow","bold": true}]
 
 #team
 team add ingame "ingame"

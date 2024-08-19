@@ -8,6 +8,7 @@ execute if entity @s[tag=race_owner] run tellraw @s [{"text": "[","color": "whit
 
 
 #normal
+execute if entity @s[tag=!race_owner,team=!race] at @s run playsound entity.experience_orb.pickup master @s ~ ~ ~ 1 1
 
 #set raceID to playerID
 execute if entity @s[tag=!race_owner,team=!race] run scoreboard players operation @s raceID = @s ID
