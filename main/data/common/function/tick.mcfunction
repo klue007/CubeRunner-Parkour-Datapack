@@ -8,11 +8,11 @@ function common:end/tick
 
 function common:rank/tick
 
+function common:training_mode/tick
+
 function common:click/tick
 
 function common:race/tick
-
-function common:training_mode/tick
 
 execute as @a[tag=!joined] at @s run function common:join
 
