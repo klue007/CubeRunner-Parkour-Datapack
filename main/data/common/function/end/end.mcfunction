@@ -14,3 +14,5 @@ function common:pb/get_pb
 scoreboard players set @s end_timer 1
 tag @s remove end
 team join end @s
+
+execute as @s[team=!training_mode,team=!race,tag=!tools] run trigger tools

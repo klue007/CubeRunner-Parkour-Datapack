@@ -9,5 +9,7 @@ title @s[team=!training_mode,team=!race] actionbar {"text":"已开始计时!","c
 effect clear @s[team=!training_mode,team=!race]
 execute as @s[team=!training_mode,team=!race] run function common:timer/timer/restart
 
+execute as @s[team=!training_mode,team=!race,tag=tools] run trigger tools
+
 #race
 title @s[team=race] actionbar {"text":"已设置重生点!","color":"gold","bold":true}
