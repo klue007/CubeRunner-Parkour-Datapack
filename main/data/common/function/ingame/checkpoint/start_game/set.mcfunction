@@ -9,5 +9,7 @@ title @s[team=!training_mode,team=!race] actionbar {"text":"Time started!","colo
 effect clear @s[team=!training_mode,team=!race]
 execute as @s[team=!training_mode,team=!race] run function common:timer/timer/restart
 
+execute as @s[team=!training_mode,team=!race,tag=tools] run trigger tools
+
 #race
 title @s[team=race] actionbar {"text":"Checkpoint!","color":"gold","bold":true}
