@@ -19,6 +19,7 @@ execute if score @s restart matches 1.. as @s[team=!race] run effect clear @s
 execute if score @s restart matches 1.. as @s[team=!race] at @s run spawnpoint @s ~ ~ ~
 execute if score @s restart matches 1.. as @s[team=!race,team=!training_mode] run team join ingame @s
 execute if score @s restart matches 1.. as @s[team=!race,team=!training_mode] run tag @s remove end
+execute if score @s restart matches 1.. as @s[team=!training_mode,team=!race,tag=!tools] run trigger tools
 execute if score @s restart matches 1.. as @s[team=!race,team=!training_mode] run function common:timer/timer/reset
 #race
 execute if score @s restart matches 1.. as @s[team=race] run tellraw @s [{"text": "[","color": "white"},{"text": "Race","color": "green"},{"text": "] ","color": "white"},{"text": "This function cannot be used in a race.","color": "gray"}]
