@@ -17,3 +17,4 @@ gamerule randomTickSpeed 0
 gamerule commandBlockOutput false
 gamerule spawnRadius 0
 gamerule announceAdvancements false
+gamerule tntExplodes false
