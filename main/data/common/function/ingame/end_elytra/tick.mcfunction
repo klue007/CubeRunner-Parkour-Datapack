@@ -5,5 +5,5 @@ function common:ingame/end_elytra/item_entity
 
 execute as @a[tag=end_elytra] unless entity @s[team=end] unless entity @s[team=race,tag=race_finish] run function common:ingame/end_elytra/remove
 
-execute as @a[tag=end_elytra] unless entity @s[nbt={Inventory:[{Slot:102b,id:"minecraft:elytra"}]}] run function common:ingame/end_elytra/give
+execute as @a[tag=end_elytra] unless items entity @s armor.chest elytra run function common:ingame/end_elytra/give
 execute as @a[tag=end_elytra] unless entity @s[nbt={Inventory:[{id:"minecraft:firework_rocket"}]}] run function common:ingame/end_elytra/give_firework
