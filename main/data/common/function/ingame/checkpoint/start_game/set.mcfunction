@@ -1,5 +1,5 @@
 #common
-execute rotated as @s run spawnpoint @s ~ ~ ~ ~
+execute rotated as @s run spawnpoint @s ~ ~ ~ ~ ~
 execute at @s run playsound minecraft:block.note_block.harp master @s ~ ~ ~ 9999 2
 tag @s remove init_plate
 
