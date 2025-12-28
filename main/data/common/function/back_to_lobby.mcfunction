@@ -7,6 +7,6 @@ effect give @s resistance 1 5 true
 
 ## Lobby Position
 tp @s ~ ~ ~
-execute at @s run spawnpoint @s ~ ~ ~ ~
+execute at @s run spawnpoint @s ~ ~ ~ ~ ~
 
 execute as @s[team=!training_mode,team=!race,tag=!tools] run trigger tools
