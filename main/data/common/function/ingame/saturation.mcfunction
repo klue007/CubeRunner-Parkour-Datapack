@@ -1,1 +1,1 @@
-effect give @a saturation 1000000 255 true
+effect give @a saturation infinite 255 true
